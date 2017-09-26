@@ -8,17 +8,17 @@ class Person
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    (@name.chars[0, 4]).join();
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    1990
+    2017 - @age.to_i
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    @name + " " + @age
   end
 
 end
